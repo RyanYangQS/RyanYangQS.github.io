@@ -1,23 +1,20 @@
 {
-  "name": "vitepress-blog",
+  "name": "vitepress-fe-nav",
   "version": "1.0.0",
+  "description": "基于 VitePress 打造个人前端导航网站",
   "private": true,
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "serve": "vitepress serve docs"
+    "dev": "vitepress dev docs --port=8732",
+    "build": "vitepress build docs"
   },
-  "dependencies": {
-    "@element-plus/icons-vue": "^2.1.0",
-    "@sugarat/theme": "^0.1.19",
-    "element-plus": "^2.3.0",
+  "author": "yangqingsong <1217071822@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@femm/prettier": "^1.0.1",
+    "@mdit-vue/shared": "^0.12.0",
+    "sass": "^1.58.3",
+    "vitepress": "1.0.0-alpha.48",
     "vue": "^3.2.47"
   },
-  "devDependencies": {
-    "sass": "^1.59.2",
-    "typescript": "^4.9.5",
-    "vitepress": "^1.0.0-alpha.62"
-  },
-  "author": "粥里有勺糖",
-  "license": "MIT"
+  "prettier": "@femm/prettier"
 }

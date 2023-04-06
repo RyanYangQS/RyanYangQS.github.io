@@ -1,59 +1,47 @@
-import { getThemeConfig, defineConfig } from '@sugarat/theme/node'
+import { defineConfig } from 'vitepress'
 
-const blogTheme = getThemeConfig({
-  // 文章默认作者
-  author: '粥里有勺糖',
-  // 友链
-  friend: [
-    {
-      nickname: '粥里有勺糖',
-      des: '你的指尖用于改变世界的力量',
-      avatar:
-        'https://img.cdn.sugarat.top/mdImg/MTY3NDk5NTE2NzAzMA==674995167030',
-      url: 'https://sugarat.top'
-    },
-    {
-      nickname: 'Vitepress',
-      des: 'Vite & Vue Powered Static Site Generator',
-      avatar:
-        'https://img.cdn.sugarat.top/mdImg/MTY3NDk5NTI2NzY1Ng==674995267656',
-      url: 'https://vitepress.vuejs.org/'
-    }
-  ],
-  // 开启离线的全文搜索支持（如构建报错可注释下面的配置再次尝试）
-  search: 'pagefind'
-})
+import { head, nav, sidebar } from './configs'
 
 export default defineConfig({
-  extends: blogTheme,
-  lang: 'zh-cn',
-  title: '@sugarat/theme',
-  description: '粥里有勺糖的博客主题，基于 vitepress 实现',
-  vite: {
-    optimizeDeps: {
-      include: ['element-plus'],
-      exclude: ['@sugarat/theme']
-    }
-  },
+  outDir: '../dist',
+
+  lang: 'zh-CN',
+  title: '打，打个大西瓜',
+  description: '包含前端常用知识、源码阅读笔记、各种奇淫技巧、日常提效工具等',
+  head,
+
   lastUpdated: true,
+  cleanUrls: true,
+
+  /* markdown 配置 */
+  markdown: {
+    lineNumbers: true
+  },
+
+  /* 主题配置 */
   themeConfig: {
-    lastUpdatedText: '上次更新于',
-    footer: {
-      message: '自定义底部内容',
-      copyright:
-        'MIT Licensed | <a target="_blank" href="https://theme.sugarat.top/"> @sugarat/theme </a>'
+    i18nRouting: false,
+
+    logo: '/logo.jpg',
+
+    nav,
+    sidebar,
+    /* 右侧大纲配置 */
+    outline: {
+      level: 'deep',
+      label: '本页目录'
     },
-    logo: '/logo.png',
-    // editLink: {
-    //   pattern:
-    //     'https://github.com/ATQQ/sugar-blog/tree/master/packages/blogpress/:path',
-    //   text: '去 GitHub 上编辑内容'
-    // },
-    socialLinks: [
-      {
-        icon: 'github',
-        link: 'https://github.com/ATQQ/sugar-blog/tree/master/packages/theme'
-      }
-    ]
+    footer: {
+      copyright: 'Copyright © 2023-present ryan'
+    },
+
+    darkModeSwitchLabel: '外观',
+    returnToTopLabel: '返回顶部',
+    lastUpdatedText: '上次更新',
+
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇'
+    }
   }
 })

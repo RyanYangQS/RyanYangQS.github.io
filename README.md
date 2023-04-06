@@ -1,29 +1,11 @@
-# vitepress @sugarat/theme
-简约风的 [Vitepress 博客主题](https://theme.sugarat.top)
+# vitepress-fe-nav
 
-## Usage
-先安装 `pnpm`
+> `VitePress` 基础模板
 
-```sh
-npm i -g pnpm
-```
+## 功能
 
-安装依赖
-```sh
-pnpm install
-```
+- 新增 `layout-class` 方便更好的自定义样式
+- 默认中文
+- 自带前端导航模块
 
-开发启动
-```sh
-pnpm dev
-```
-
-构建
-```sh
-pnpm build
-```
-
-预览产物
-```sh
-pnpm serve
-```
+## 说明

@@ -1,23 +1,19 @@
 {
-  "hash": "a9838b3e",
-  "browserHash": "ce19fed5",
+  "hash": "769aadf9",
+  "browserHash": "1e61c990",
   "optimized": {
     "vue": {
-      "src": "../../../../node_modules/.pnpm/registry.npmmirror.com+vue@3.2.47/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "src": "../../../../node_modules/.pnpm/vue@3.2.47/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "0cb8cdb5",
+      "fileHash": "1f785447",
       "needsInterop": false
     },
-    "element-plus": {
-      "src": "../../../../node_modules/.pnpm/registry.npmmirror.com+element-plus@2.3.2_vue@3.2.47/node_modules/element-plus/es/index.mjs",
-      "file": "element-plus.js",
-      "fileHash": "4131bfc4",
+    "@mdit-vue/shared": {
+      "src": "../../../../node_modules/.pnpm/@mdit-vue+shared@0.12.0/node_modules/@mdit-vue/shared/dist/index.mjs",
+      "file": "@mdit-vue_shared.js",
+      "fileHash": "ee049f64",
       "needsInterop": false
     }
   },
-  "chunks": {
-    "chunk-DZFCZL64": {
-      "file": "chunk-DZFCZL64.js"
-    }
-  }
+  "chunks": {}
 }
