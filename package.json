@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "vitepress dev docs --port=8732",
-    "build": "vitepress build docs"
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs --port 8080"
   },
   "author": "yangqingsong <1217071822@qq.com>",
   "license": "MIT",
